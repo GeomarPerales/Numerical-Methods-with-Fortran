@@ -20,7 +20,7 @@ read(*,*)tol
 
 
 !leyendo matriz almacenada en archivo matrix txt
-open(unit=25,file='D:/gs/matrix.txt',status='old',action='read')
+open(unit=25,file='matrix.txt',status='old',action='read')
 allocate(MAT(n,n+2))
 
 do i=1,n
@@ -79,13 +79,13 @@ end do
 
 
 
-open(21,file="D:/gs/res.txt",action='write',status='replace')
+open(21,file="res.txt",action='write',status='replace')
 do i=1,k+1
 write(21,*) (X(i,j),j=1,n)
 end do
 close(21)
 
-open(22,file="D:/gs/error.txt",action='write',status='replace')
+open(22,file="error.txt",action='write',status='replace')
 do i=1,k
 write(22,*) (e(i,j),j=1,n)
 end do
