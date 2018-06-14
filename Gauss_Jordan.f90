@@ -10,7 +10,7 @@ write(*,*)'ingresar el numero de incognitas'
 read(*,*)n
 
 !leyendo matriz almacenada en archivo matrix txt
-open(unit=11,file='D:/E3.2/matrix.txt',status='old',action='read')
+open(unit=11,file='matrix.txt',status='old',action='read')
 allocate(MAT(n,n+1))
 
 do i=1,n
@@ -45,7 +45,7 @@ write(*,*) (MAT(i,j),j=1,n+1)
 end do
 
 !eliminacion de Gauss / Gauss - Jordan 
-open(12,file="D:/E3.2/matpap.txt",action='write',status='replace')
+open(12,file="matpap.txt",action='write',status='replace')
 do i=1,n
 	MAT(i,:)=MAT(i,:)/MAT(i,i)
 	do j=1,n
@@ -61,14 +61,14 @@ end do
 S=MAT(1:n,n+1)
 
 !imprimiendo en txt la matriz final aumentada
-open(13,file="D:/E3.2/matfinal.txt",action='write',status='replace')
+open(13,file="matfinal.txt",action='write',status='replace')
 do i=1,n
 write(13,*) (MAT(i,j),j=1,n+1)
 end	do
 close(13)
 
 !imprimiendo en txt el vector solucion
-open(14,file="D:/E3.2/solution.txt",action='write',status='replace')
+open(14,file="solution.txt",action='write',status='replace')
 do i=1,n
 write(14,*) S(i)
 end	do
