@@ -1,4 +1,4 @@
-program doolitle
+program doolittle
 implicit none
 
 real,dimension(:,:),allocatable::MAT,A,L,U
@@ -12,7 +12,7 @@ write(*,*)'ingresar el numero de incognitas'
 read(*,*)n
 
 !leyendo matriz almacenada en archivo matrix txt
-open(unit=11,file='D:/doolittle/matrix.txt',status='old',action='read')
+open(unit=11,file='matrix.txt',status='old',action='read')
 allocate(MAT(n,n+1))
 
 do i=1,n
@@ -39,7 +39,7 @@ do i=1,n
 B(i)=MAT(i,n+1)
 end do
 
-!generando matrices vacías
+!generando matrices vacÃ­as
 do i=1,n
 do j=1,n
 	L(i,j)=0
@@ -92,19 +92,19 @@ end do
 
 
 !imprimiendo en txt la matriz final aumentada
-open(12,file="D:/doolittle/matL.txt",action='write',status='replace')
+open(12,file="matL.txt",action='write',status='replace')
 do i=1,n
 write(12,*) (L(i,j),j=1,n)
 end	do
 close(12)
 
-open(13,file="D:/doolittle/matU.txt",action='write',status='replace')
+open(13,file="matU.txt",action='write',status='replace')
 do i=1,n
 write(13,*) (U(i,j),j=1,n)
 end	do
 close(13)
 
-open(14,file="D:/doolittle/matX.txt",action='write',status='replace')
+open(14,file="matX.txt",action='write',status='replace')
 do i=1,n
 write(14,*) X(i)
 end	do
