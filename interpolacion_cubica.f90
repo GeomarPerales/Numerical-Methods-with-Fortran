@@ -11,7 +11,7 @@ write(*,*)'interpolacion de grado:'
 write(*,*) n-1
 
 !leyendo matriz almacenada en archivo matrix txt
-open(unit=11,file='D:/E5/data.txt',status='old',action='read')
+open(unit=11,file='data.txt',status='old',action='read')
 allocate(MAT(n,2))
 
 do i=1,n
@@ -102,7 +102,7 @@ read(*,*)ve
 R=M(4,1)*ve**(n-1)+M(3,1)*ve**(n-2)+M(2,1)*ve**(n-3)+M(1,1)
 
 
-write(*,*)'valor evaluado en la interpolación'
+write(*,*)'valor evaluado en la interpolaciÃ³n'
 
 write(*,*) R
 write(*,*)'--------------------------------------------------'
@@ -130,7 +130,7 @@ do i=1,L
 write(*,*) (TAB(i,j),j=1,2)
 end do
 
-open(12,file="D:/E5/res_interpolacion.txt",action='write',status='replace')
+open(12,file="res_interpolacion.txt",action='write',status='replace')
 write(12,*)'----- X ------ Yajustado ----------'
 do i=1,L
 write(12,*) (TAB(i,j),j=1,2)
