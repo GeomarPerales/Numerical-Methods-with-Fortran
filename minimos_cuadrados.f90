@@ -9,11 +9,11 @@ real::r,sx,sy,sxy,sx2,sy2,se,erm
 real::a,b
 integer::n,i,j
 
-write(*,*)'ingresar el tamaño de los datos'
+write(*,*)'ingresar el tamaÃ±o de los datos'
 read(*,*)n
 
 !leyendo matriz almacenada en archivo matrix txt
-open(unit=12,file='D:/E5/data.txt',status='old',action='read')
+open(unit=12,file='data.txt',status='old',action='read')
 allocate(MAT(n,2))
 do i=1,n
 read(12,*) (MAT(i,j),j=1,2)
@@ -99,7 +99,7 @@ write(*,*) 'El error medio es:'
 write(*,*) erm
 
 !almacenamiento de datos en un archivo txt
-open(13,file="D:/E5/res_interpolation.txt",action='write',status='replace')
+open(13,file="res_interpolation.txt",action='write',status='replace')
 write(13,*)'---------- X ------------- Y -------- Yajustado ------ Error ----'
 do i=1,n
 write(13,*) (TAB(i,j),j=1,4)
