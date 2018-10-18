@@ -1,4 +1,5 @@
-# Numerical-methods-with-fortran90
+# Métodos Numéricos con fortran 90
+
 Códigos desarrollados para Métodos Numéricos I - IMF - UNMSM
 
 # Contenido
