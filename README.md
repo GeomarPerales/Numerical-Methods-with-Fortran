@@ -1,20 +1,20 @@
 # Métodos Numéricos con fortran 90
 
-## 1. Descripción
+## 1. Description
 
-Los métodos numéricos son herramientas mediante las cuales es posible formular y resolver problemas matemáticos utilizando operaciones airtméticas. Aunque existen muchos tipos de métodos numéricos, éstos comparten una característica común: invariablemente requieren de un buen número de tediosos cálculos aritméticos.
+Numerical methods are tools by which it is possible to formulate and solve mathematical problems using airtmetic operations. Although there are many types of numerical methods, they share a common feature: they invariably require a number of tedious arithmetic calculations.
 
-## 2. Contenido
+## 2. Contents
 
-El repositorio contiene los siguientes métodos numéricos desarrollados en Fortran 90:
+this repository contain following numerical methods scripting in fortran 90:
 
-- Método de Gauss Jordan
-- Método de Doolittle
-- Método de Gauss Seidel
-- Método de Interpolación cúbica
-- Método de Newton-raphson
+- Gauss Jordan
+- Doolittle
+- Gauss Seidel
+- Cubic spline
+- Newton-raphson
 
-## 3. Referencias
+## 3. References
 
 1> Chapra, S. C. & Canale R. P. (1998). Numerical methods for engineers (2da. ed.). New York: McGraw-Hill.
 
