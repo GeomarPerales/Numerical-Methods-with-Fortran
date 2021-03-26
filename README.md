@@ -1,4 +1,4 @@
-# Métodos Numéricos con fortran 90
+# Numerical Methods with Fortran 90
 
 ## 1. Description
 
