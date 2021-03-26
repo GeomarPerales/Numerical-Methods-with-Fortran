@@ -15,7 +15,7 @@ read(*,*) n		!numero de iteraciones
 write(*,*)'valor inicial: '
 read(*,*) vi	!valor inicial
 
-write(*,*) 'error de aproximación'
+write(*,*) 'error de aproximaciÃ³n'
 write(*,*) Error
 
 allocate(X(n))
